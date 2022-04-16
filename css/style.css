@@ -721,6 +721,16 @@ section{
         font-size: 50%;
     }
 
+    .home a{
+    position: absolute;
+   margin-left: -50px;
+   margin-top: 220px;
+}
+
+    .video{
+        background-image: url(../images/fondo3.mp4);
+    }
+
 }
 
 /*h1{

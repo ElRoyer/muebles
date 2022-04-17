@@ -727,9 +727,15 @@ section{
    margin-top: 220px;
 }
 
-    .video{
-        background-image: url(../images/fondo3.mp4);
-    }
+  
+.img-fondo{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-image: url(../images/fondo-450.png);
+}
+
 
 }
 

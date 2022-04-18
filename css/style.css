@@ -212,14 +212,6 @@ section{
     background-position: center;
 }
 
-.content{
-    max-width: 49rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-}
-
 .video{
     position: absolute;
     top: 0;
@@ -241,13 +233,14 @@ section{
     background: no-repeat center/70% url(../images/fondo-1080.png);
 }
 
-.header-content {
-    z-index: 2;
-    position: absolute;
-    top: 550px;
-    left: 580px;
-}
 
+.header-content a{
+    width: 100%;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    position: relative;
+}
 
 .home .content h3{
     font-size: 6rem;

@@ -724,10 +724,11 @@ section{
         font-size: 50%;
     }
 
-    .home a{
+   .header-content {
+    z-index: 2;
     position: absolute;
-   margin-left: -50px;
-   margin-top: 220px;
+    top: 550px;
+    left: 580px;
 }
     
     
@@ -739,7 +740,7 @@ section{
     left: 0;
     z-index: 2;
     align-items: center;
-    background: no-repeat center/50% url(../images/fondo-1080.png);
+    background: no-repeat center/30% url(../images/fondo-360-640.png);
 }
 
 }

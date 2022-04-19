@@ -605,7 +605,8 @@ section{
         top:100%; right: -100%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height: calc(50vh - 9.5rem);
+        opacity: .1;
     }
 
     .header .navbar.active{

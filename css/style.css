@@ -72,6 +72,8 @@ section{
     letter-spacing: .2rem;
 }
 
+
+/*====================================== Header Section ======================================*/
 .header{
     background: var(--bg);
     display: flex;
@@ -168,7 +170,8 @@ section{
 }
 
 
-/* ========================  VIDEO ======================== */
+
+/*====================================== Home Section ======================================*/
 
 .video{
     position: absolute;
@@ -197,7 +200,7 @@ section{
 
 .home .content h3{
     font-size: 6rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color:#fff;
 }
 
@@ -207,7 +210,21 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+    text-transform: lowercase;
 }
+
+.home .content  label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+/*====================================== About Section ======================================*/
 
 .about .row{
     display: flex;
@@ -240,13 +257,112 @@ section{
     line-height: 1.8;
 }
 
+
+/* Modal ABOUT */
+
+
+.boton-modal_about{
+    padding: 40px;
+}
+
+#btn-modal_about{
+    display: none;
+}
+
+.boton-modal_about label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.boton-modal_about:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal_about{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal_about:checked ~ .container-modal_about{
+    display: flex;
+}
+
+.content-modal_about{
+    width: 100%;
+    max-width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal_about h2{
+    margin-bottom: 15px;
+}
+
+.content-modal_about p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 1.5rem;
+    text-transform: none;
+    font-family: !important;
+}
+
+.content-modal_about .btn-cerrar_about{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal_about .btn-cerrar_about label{
+   margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal_about .btn-cerrar_about label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal_about{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+
+/*====================================== Menu Section ======================================*/
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
-.menu .box-container .box-1,.box-2 ,.box-3, .box-4, .box-5, .box-6{
+.menu .box-container .box-1,
+.box-2 ,
+.box-3, 
+.box-4, 
+.box-5, 
+.box-6{
     padding:5rem;
     height: 20rem; 
     text-align: center;
@@ -255,7 +371,6 @@ section{
     animation: movimiento 10s infinite linear alternate;
 }
 
-
 .box-1{
  background-image: url(../images/cocinas.jpeg);
 }
@@ -263,7 +378,7 @@ section{
 
 .box-2{
     background-image: url(../images/recamaras.jpeg);
-    background-size: 400px;
+    background-size: 380px;
 }
 
 .box-3{
@@ -286,7 +401,6 @@ section{
     background-size: 400px ; 
 }
 
-
 @keyframes movimiento{
     from{
         background-position: bottom left;
@@ -295,12 +409,15 @@ section{
     }
 }
 
-
 .menu .box-container .box-1,.box-2,.box-3,.box-4,.box-5,.box-6, h3{
     color: #fff;
-    background-color: rgba(0, 0, 0, .2);
-    font-size: 2.5rem;
-    padding:2.5rem 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+    padding:3rem 1rem;
+}
+
+.cocina{
+    padding: 37px;  
 }
 
 .menu .box-container .box .price{
@@ -322,6 +439,9 @@ section{
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+
+
+/*====================================== Products Section ======================================*/
 
 .products .box-container{
     display: grid;
@@ -382,6 +502,9 @@ section{
     font-size: 1.5rem;
 }
 
+
+/*====================================== Review Section ======================================*/
+
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -418,6 +541,9 @@ section{
     font-size: 1.5rem;
     color:var(--main-color);
 }
+
+
+/*====================================== Contact Section ======================================*/
 
 .contact .row{
     display: flex;
@@ -467,6 +593,9 @@ section{
     text-transform: none;
     background:none;
 }
+
+
+/*====================================== Recent Works Section ======================================*/
 
 .blogs .box-container{
     display: grid;
@@ -521,6 +650,9 @@ section{
     color:#ccc;
     padding:1rem 0;
 }
+
+
+/*====================================== Footer Section ======================================*/
 
 .footer{
     background:var(--black);
@@ -577,18 +709,18 @@ section{
 }
 
 
-/* ===================== MODAL IMAGES ===================== */
+/* ===================== MODAL IMAGES 1 ===================== */
 
-.boton-modal{
+.boton-modal1{
     padding: 40px;
     background-color: #fff;
 }
 
-#btn-modal{
+#btn-modal1{
     display: none;
 }
 
-.boton-modal label{
+.boton-modal1 label{
     margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
@@ -598,11 +730,11 @@ section{
     cursor: pointer;
 }
 
-.boton-modal:hover{
+.boton-modal1:hover{
     letter-spacing: .2rem;
 }
 
-.container-modal{
+.container-modal1{
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -614,11 +746,11 @@ section{
     z-index: 100;
 }
 
-#btn-modal:checked ~ .container-modal{
+#btn-modal1:checked ~ .container-modal1{
     display: flex;
 }
 
-.content-modal{
+.content-modal1{
     width: 100%;
     max-width: 60%;
     padding: 20px;
@@ -626,14 +758,14 @@ section{
     border-radius: 4px;
 }
 
-.content-modal .btn-cerrar{
+.content-modal1 .btn-cerrar1{
     width: 100%;
     margin-top: 15px;
     display: flex;
     justify-content: flex-end;
 }
 
-.content-modal .btn-cerrar label{
+.content-modal1 .btn-cerrar1 label{
    margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
@@ -643,17 +775,414 @@ section{
     cursor: pointer;
 }
 
-.content-modal .btn-cerrar label:hover{
+.content-modal1 .btn-cerrar1 label:hover{
     letter-spacing: .2rem;
 }
 
-.cerrar-modal{
+.cerrar-modal1{
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;  left: 0;
     z-index: -1;
 }
+
+
+/* ===================== MODAL IMAGES 2 ===================== */
+
+.boton-modal2{
+    padding: 40px;
+    background-color: #fff;
+}
+
+#btn-modal2{
+    display: none;
+}
+
+.boton-modal2 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.boton-modal2:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal2:checked ~ .container-modal2{
+    display: flex;
+}
+
+
+.content-modal2{
+    width: 100%;
+    max-width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal2 .btn-cerrar2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal2 .btn-cerrar2 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal2 .btn-cerrar2 label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+
+
+/* ===================== MODAL IMAGES 3 ===================== */
+.boton-modal3{
+    padding: 40px;
+    background-color: #fff;
+}
+
+#btn-modal3{
+    display: none;
+}
+
+.boton-modal3 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.boton-modal3:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal3{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal3:checked ~ .container-modal3{
+    display: flex;
+}
+
+
+.content-modal3{
+    width: 100%;
+    max-width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal3 .btn-cerrar3{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal3 .btn-cerrar3 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal3 .btn-cerrar3 label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal3{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+
+/* ===================== MODAL IMAGES 4 ===================== */
+
+.boton-modal4{
+    padding: 40px;
+    background-color: #fff;
+}
+
+#btn-modal4{
+    display: none;
+}
+
+.boton-modal4 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.boton-modal4:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal4{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal4:checked ~ .container-modal4{
+    display: flex;
+}
+
+
+.content-modal4{
+    width: 100%;
+    max-width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal4 .btn-cerrar4{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal4 .btn-cerrar4 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal4 .btn-cerrar4 label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal4{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+/* ===================== MODAL IMAGES 5 ===================== */
+
+.boton-modal5{
+    padding: 39px;
+    background-color: #fff;
+}
+
+#btn-modal5{
+    display: none;
+}
+
+.boton-modal5 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.boton-modal5:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal5{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal5:checked ~ .container-modal5{
+    display: flex;
+}
+
+
+.content-modal5{
+    width: 100%;
+    max-width: 55%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal5 .btn-cerrar5{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal5 .btn-cerrar5 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal5 .btn-cerrar5 label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal5{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+/* ===================== MODAL IMAGES 5 ===================== */
+
+.boton-modal6{
+    padding: 39px;
+    background-color: #fff;
+}
+#btn-modal6{
+    display: none;
+}
+.boton-modal6 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.boton-modal6:hover{
+    letter-spacing: .2rem;
+}
+
+.container-modal6{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal6:checked ~ .container-modal6{
+    display: flex;
+}
+
+
+.content-modal6{
+    width: 100%;
+    max-width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal6 .btn-cerrar6{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal6 .btn-cerrar6 label{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.content-modal6 .btn-cerrar6 label:hover{
+    letter-spacing: .2rem;
+}
+
+.cerrar-modal6{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;  left: 0;
+    z-index: -1;
+}
+
+
 
 
 
@@ -666,7 +1195,8 @@ section{
     filter: brightness(80%);
 }
 
-/* ===================== MEDIA QUERIES ===================== */
+
+/*====================================== Media Queries Section ======================================*/
 @media (max-width:991px){
 
     html{

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebles ALERI</title>
 
-    <!-- font awesome cdn link  -->
+    <!-- ====================================== Font cdn link ====================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- ICONS  -->    
+    <!-- ====================================== ICONS ====================================== -->    
     <script src="https://kit.fontawesome.com/7ed7563472.js" crossorigin="anonymous"></script>
 
 
@@ -21,14 +21,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-    <!-- custom css file link  -->
+    <!-- ====================================== custom css file link ======================================  -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-<!-- header section starts  -->
-
+<!--====================================== Header Section starts ======================================-->
 <header class="header">
 
     <a href="#" class="logo">
@@ -44,15 +43,12 @@
     </nav>
 
     <div class="icons">
-       
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
-
 </header>
-<!-- header section ends -->
+<!--====================================== Header Section ends ======================================-->
 
-<!-- home section starts  -->
-
+<!--====================================== Home Section VIDEO starts ======================================-->
 <section class="home" id="home">
  <div class="header-video">
             <video src="images/cocina.mp4" class="video" muted autoplay loop>
@@ -61,11 +57,11 @@
 </div>
 </section>
 
-<!-- home section ends -->
+<!--====================================== Home Section ends ======================================-->
 
-<!-- about section starts  -->
+<!--====================================== About Section starts ======================================-->
 <section class="about" id="about">
-    <h1 class="heading"> <span>Acerca de</span> Nosotros </h1>
+    <h1 class="heading"> <span>A cerca de</span> Nosotros </h1>
     <div class="row">
         <div class="image">
             <img src="images/cocina-integral.jpeg" alt="">
@@ -74,108 +70,253 @@
             <h3>¿Que nos hace tan especial?</h3>
             <p>Somos una empresa innovadora  con más de 30 años de experiencia dedicados al diseño y elegancia de muebles para la satisfacción de nuestros clientes y sus gustos.</p>
             <p>En cada uno de nuestros proyectos ponemos toda nuestra dedicación porque nuestra mejor...</p>
-            <a href="#" class="btn">Leer más</a>
+            <div class="boton-modal_about"> 
+            <label for="btn-modal_about">Ver más</label>
+            </div>
         </div>
     </div>
 </section>
-<!-- about section ends -->
 
 
-<!-- menu section starts  -->
+<!-- MODAL ABOUT -->
+<input type="checkbox" id="btn-modal_about">
+    <div class="container-modal_about">
+        <div class="content-modal_about">
+            <h2>¡Nuestro Objetivo!</h2>
+                    <p>Nuestro  principal objetivo es brindar un servicio de calidad, puntualidad, honestidad, respeto, garantizando de la complacencia de cada uno de nuestros clientes al termino de cada trabajo.</p>
+
+                <div class="btn-cerrar_about">
+                    <label for="btn-modal_about">Cerrar</label>
+                </div>
+        </div>
+        <label for="btn-modal_about" class="cerrar-modal_about"></label>
+    </div>
+
+<!--====================================== About Section ends ======================================-->
+
+
+<!--====================================== Menu Section starts ======================================-->
 <section class="menu" id="menu">
     <h1 class="heading"> Nuestros <span>servicios</span> </h1>
     <div class="box-container">
-        <div class="box-1 boton-modal">
-            <h3>Cocinas Integrales</h3>  
-           <label for="btn-modal">Ver más</label>
+        <div class="box-1 boton-modal1">
+            <h3 class="cocina">COCINAS INTEGRALES</h3>  
+            <label for="btn-modal1" class="fancybox">Ver más</label>
         </div>
-        <div class="box-2">
-            <h3>Recamaras</h3>
-           <button class="btn">Ver más</button>
+        <div class="box-2 boton-modal2">
+            <h3>RECAMARAS</h3>
+           <label for="btn-modal2" class="fancybox">Ver más</label>
         </div>
-        <div class="box-3">
-            <h3>Puertas</h3>
-            <a href="#" class="btn">Ver más</a>
+        <div class="box-3 boton-modal3">
+            <h3>PUERTAS</h3>
+            <label for="btn-modal3" class="fancybox">Ver más</label>
         </div>
-        <div class="box-4">
-            <h3>Escaleras</h3>
-            <a href="#" class="btn">Ver más</a>
+        <div class="box-4 boton-modal4">
+            <h3>ESCALERAS</h3>
+            <label for="btn-modal4" class="fancybox">Ver más</label>
         </div>
-        <div class="box-5">
-            <h3>Centros de Entretenimiento</h3>
-           <a href="#" class="btn">Ver más</a>
+        <div class="box-5 boton-modal5">
+            <h3>ENTRETENIMIENTO</h3>
+           <label for="btn-modal5" class="fancybox">Ver más</label>
         </div>
-        <div class="box-6">
-            <h3>Armarios</h3>
-           <a href="#" class="btn">Ver más</a>
+        <div class="box-6 boton-modal6">
+            <h3>ARMARIOS</h3>
+           <label for="btn-modal6" class="fancybox">Ver más</label>
         </div>
     </div>
 </section>
 
-
 <!-- Section MODAL 1 -->
-<input type="checkbox" id="btn-modal">
-<div class="container-modal">
-    <div class="content-modal">
+<input type="checkbox" id="btn-modal1">
+<div class="container-modal1">
+    <div class="content-modal1">
         
         <!-- Carrusel Section -->
-        <div class="container-fluid">
+        <div class="container-fluid1">
             <div class="row mt-4">
-                
+                <!-- Img 1 -->
                 <div class="item col-sm-6 col-md-4 mb-3">
                     <a href="images/cocina-integral.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="images/cocina-integral.jpeg" width="100%" height="100%">
                     </a>
                 </div>
-
-
-                 <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/cocina2.jpeg" class="fancybox" data-fancybox="gallery1">
-                        <img src="images/cocina2.jpeg" width="100%" height="100%">
-                    </a>
-                </div>
-
-                 <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/cocinas.jpeg" class="fancybox" data-fancybox="gallery1">
-                        <img src="images/cocinas.jpeg" width="100%" height="100%">
-                    </a>
-                </div>
-
-                  <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="images/cocina-integral.jpeg" class="fancybox" data-fancybox="gallery1">
-                        <img src="images/cocina-integral.jpeg" width="100%" height="100%">
-                    </a>
-                </div>
-
+                <!-- Img 2 -->
                 <div class="item col-sm-6 col-md-4 mb-3">
                     <a href="images/cocina2.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="images/cocina2.jpeg" width="100%" height="100%">
                     </a>
                 </div>
-
-                
-                 <div class="item col-sm-6 col-md-4 mb-3">
+                <!-- Img 3 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
                     <a href="images/cocinas.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="images/cocinas.jpeg" width="100%" height="100%">
                     </a>
                 </div>
+                <!-- Img 4 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/cocina-integral.jpeg" class="fancybox" data-fancybox="gallery1">   
+                    </a>
+                </div>
+                <!-- Img 5 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/cocina2.jpeg" class="fancybox" data-fancybox="gallery1">                  
+                    </a>
+                </div>
+                <!-- Img 6 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/cocinas.jpeg" class="fancybox" data-fancybox="gallery1">          
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-cerrar1">
+            <label for="btn-modal1">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal1" class="cerrar-modal1"></label>
+</div>
 
+<!-- Section MODAL 2 -->
+<input type="checkbox" id="btn-modal2">
+<div class="container-modal2">
+    <div class="content-modal2">
+        
+        <!-- Carrusel Section -->
+        <div class="container-fluid2">
+            <div class="row mt-4">
 
+                 <!-- Img 1 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/recamaras.jpeg" class="fancybox" data-fancybox="gallery2">
+                        <img src="images/recamaras.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
 
             </div>
         </div>
-
-
-
-        <div class="btn-cerrar">
-            <label for="btn-modal">Cerrar</label>
+        <div class="btn-cerrar2">
+            <label for="btn-modal2">Cerrar</label>
         </div>
     </div>
-    <label for="btn-modal" class="cerrar-modal"></label>
+    <label for="btn-modal2" class="cerrar-modal2"></label>
+</div>
+
+<!-- Section MODAL 3 -->
+<input type="checkbox" id="btn-modal3">
+<div class="container-modal3">
+    <div class="content-modal3">
+        
+        <!-- Carrusel Section -->
+        <div class="container-fluid3">
+            <div class="row mt-4">
+
+                 <!-- Img 1 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/puerta.jpeg" class="fancybox" data-fancybox="gallery3">
+                        <img src="images/puerta.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+
+                 <!-- Img 2 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/puerta2.jpeg" class="fancybox" data-fancybox="gallery3">
+                        <img src="images/puerta2.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn-cerrar3">
+            <label for="btn-modal3">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal3" class="cerrar-modal3"></label>
+</div>
+
+<!-- Section MODAL 4 -->
+<input type="checkbox" id="btn-modal4">
+<div class="container-modal4">
+    <div class="content-modal4">
+        
+        <!-- Carrusel Section -->
+        <div class="container-fluid4">
+            <div class="row mt-4">
+
+                 <!-- Img 1 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/escaleras.jpeg" class="fancybox" data-fancybox="gallery4">
+                        <img src="images/escaleras.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn-cerrar4">
+            <label for="btn-modal4">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal4" class="cerrar-modal4"></label>
+</div>
+
+<!-- Section MODAL 5 -->
+<input type="checkbox" id="btn-modal5">
+<div class="container-modal5">
+    <div class="content-modal5">
+        
+        <!-- Carrusel Section -->
+        <div class="container-fluid5">
+            <div class="row mt-4">
+
+                 <!-- Img 1 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/entretenimiento.jpeg" class="fancybox" data-fancybox="gallery5">
+                        <img src="images/entretenimiento.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn-cerrar5">
+            <label for="btn-modal5">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal5" class="cerrar-modal5"></label>
+</div>
+
+<!-- Section MODAL 6  -->
+<input type="checkbox" id="btn-modal6">
+<div class="container-modal6">
+    <div class="content-modal6">
+        
+        <!-- Carrusel Section -->
+        <div class="container-fluid6">
+            <div class="row mt-4">
+
+                 <!-- Img 1 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/armarios.jpeg" class="fancybox" data-fancybox="gallery6">
+                        <img src="images/armarios.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+
+                 <!-- Img 2 -->
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="images/armarios1.jpeg" class="fancybox" data-fancybox="gallery6">
+                        <img src="images/armarios1.jpeg" width="100%" height="100%">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn-cerrar6">
+            <label for="btn-modal6">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal6" class="cerrar-modal5"></label>
 </div>
 
 
-<!-- review section starts  -->
+<!--====================================== Review Section starts ======================================-->
 
 <section class="review" id="review">
 
@@ -188,7 +329,7 @@
             <img src="images/quote-img.png" alt="" class="quote">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
             <img src="images/perfil.jpg" class="user" alt="">
-            <h3>john deo</h3>
+            <h3>Rodrigo Hernández</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -201,8 +342,8 @@
         <div class="box">
             <img src="images/quote-img.png" alt="" class="quote">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/perfil.jpg" class="user" alt="">
-            <h3>john deo</h3>
+            <img src="images/3.jpg" class="user" alt="">
+            <h3>Dennise Ramírez</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -215,8 +356,8 @@
         <div class="box">
             <img src="images/quote-img.png" alt="" class="quote">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-            <img src="images/perfil.jpg" class="user" alt="">
-            <h3>john deo</h3>
+            <img src="images/4.jpg" class="user" alt="">
+            <h3>Erick Arellano</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -227,12 +368,12 @@
         </div>
 
     </div>
-
 </section>
 
-<!-- review section ends -->
+<!--====================================== Review Section ends ======================================-->
 
-<!-- contact section starts  -->
+
+<!--====================================== Contact section starts ======================================-->
 
 <section class="contact" id="contact">
 
@@ -260,12 +401,11 @@
         </form>
 
     </div>
-
 </section>
 
-<!-- contact section ends -->
+<!-- ====================================== Contact Section ends ====================================== -->
 
-<!-- blogs section starts  -->
+<!-- ====================================== Blogs Section starts ====================================== -->
 
 <section class="blogs" id="blogs">
 
@@ -275,29 +415,18 @@
 
         <div class="box">
             <div class="content">
-                <iframe width="300" height="440" src="http://instagram.com/p/CbB0xZrruGc/embed" frameborder="0"></iframe>
+                <iframe width="300" height="440" src="http://instagram.com/p/CcaKbBLAoFs/embed" frameborder="0"></iframe>
             </div>
         </div>
 
-        <div class="box">
-            <div class="content">
-                <iframe width="300" height="440" src="http://instagram.com/p/CVvhERyPNif/embed" frameborder="0"></iframe>
-            </div>
-        </div>
-
-        <div class="box">
-           <div class="content">
-                <iframe width="300" height="440" src="http://instagram.com/p/CJfNGmajxSQ/embed" frameborder="0"></iframe>
-            </div>
-        </div>
-
+    
     </div>
 
 </section>
 
-<!-- blogs section ends -->
+<!-- ====================================== Blogs Section ends ====================================== -->
 
-<!-- footer section starts  -->
+<!-- ====================================== Footer Section starts ======================================  -->
 
 <section class="footer">
 
@@ -316,22 +445,21 @@
     </div>
 
     <div class="credit">created by <span>Muebles Aleri</span> | all rights reserved</div>
-
 </section>
 
-<!-- footer section ends -->
+<!-- ====================================== Footer Section ends ====================================== -->
 
-<!-- custom js file link  -->
+<!-- ====================================== Custom js File links starts ======================================  -->
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 
 
 <!-- Messenger Plugin de chat Code -->
-    <div id="fb-root"></div>
+<div id="fb-root"></div>
 
  <!-- Your Plugin de chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
 
 <script>
       var chatbox = document.getElementById('fb-customer-chat');
@@ -339,7 +467,7 @@
       chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 
- <!-- Your SDK code -->
+<!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -356,6 +484,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+<!-- ====================================== Custom js File links ends ======================================  -->
 
 </body>
 </html>

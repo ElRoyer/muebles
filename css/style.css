@@ -1216,6 +1216,17 @@ section{
         width: 90%;
     }
 
+
+.boton-modal1 label{
+    margin-top: .3rem;
+}
+}
+
+@media (max-width:886px){
+
+.boton-modal1 label{
+   margin-top: -6rem;
+        }
 }
 
 @media (max-width:768px){
@@ -1280,6 +1291,18 @@ section{
         max-width: 100%;
      }
 
+
+.boton-modal1 label{
+    margin-top: .2rem;
+}
+}
+
+
+@media (max-width: 596px){
+
+.boton-modal1 label{
+    margin-top: -9rem;
+}
 }
 
 @media (max-width:450px){
@@ -1297,6 +1320,11 @@ section{
     z-index: 2;
     align-items: center;
     background: no-repeat center/80% url(../images/fondo-360-640.png);
+}
+
+
+.boton-modal1 label{
+    margin-top: -.3rem;
 }
 
 }

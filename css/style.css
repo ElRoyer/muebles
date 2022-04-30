@@ -181,6 +181,7 @@ section{
     height: 100vh;
     object-fit: cover;
     overflow: hidden;
+   /* opacity: .4 ;*/
 }
 
 .header-overlay{
@@ -372,7 +373,7 @@ section{
 }
 
 .box-1{
- background-image: url(../images/cocinas.jpeg);
+ background-image: url(../images/cocina/cocinas.jpeg);
 }
 
 
@@ -382,7 +383,7 @@ section{
 }
 
 .box-3{
-    background-image: url(../images/puerta2.jpeg);
+    background-image: url(../images/puertas/puerta2.jpeg);
     background-size: 300px;
 }
 
@@ -392,12 +393,12 @@ section{
 }
 
 .box-5{
-    background-image: url(../images/entretenimiento.jpeg);
+    background-image: url(../images/entretenimiento/entretenimiento.jpeg);
     background-size: 400px ;
 }
 
 .box-6{
-    background-image: url(../images/armarios.jpeg);
+    background-image: url(../images/armarios/armarios.jpeg);
     background-size: 400px ; 
 }
 
@@ -1319,12 +1320,12 @@ section{
     left: 0;
     z-index: 2;
     align-items: center;
-    background: no-repeat center/80% url(../images/fondo-360-640.png);
+    background: no-repeat center/80% url(../images/fondo-360-640-2.png);
 }
 
 
 .boton-modal1 label{
     margin-top: -.3rem;
-}
+} 
 
 }

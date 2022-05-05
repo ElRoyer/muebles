@@ -192,7 +192,7 @@ section{
     left: 0;
     z-index: 2;
     align-items: center;
-    background: no-repeat center/70% url(../images/fondo-1080.png);
+    background: no-repeat center/70% url(../images/assets/fondo-1080.png);
 }
 
 .home .content{
@@ -373,32 +373,32 @@ section{
 }
 
 .box-1{
- background-image: url(../images/cocina/cocinas.jpeg);
+ background-image: url(../images/cocina/c_1.jpeg);
 }
 
 
 .box-2{
-    background-image: url(../images/recamaras.jpeg);
+    background-image: url(../images/recamaras/r_1.jpeg);
     background-size: 380px;
 }
 
 .box-3{
-    background-image: url(../images/puertas/puerta2.jpeg);
+    background-image: url(../images/puertas/p_1.jpeg);
     background-size: 300px;
 }
 
 .box-4{
-    background-image: url(../images/escaleras.jpeg);
+    background-image: url(../images/escaleras/e_1.jpeg);
     background-size: 400px;
 }
 
 .box-5{
-    background-image: url(../images/entretenimiento/entretenimiento.jpeg);
+    background-image: url(../images/entretenimiento/en_1.jpeg);
     background-size: 400px ;
 }
 
 .box-6{
-    background-image: url(../images/armarios/armarios.jpeg);
+    background-image: url(../images/armarios/a_1.jpeg);
     background-size: 400px ; 
 }
 
@@ -1307,7 +1307,7 @@ section{
     z-index: 2;
     opacity: .9;
     align-items: center;
-    background: no-repeat center/100% url(../images/fondo-768.png);
+    background: no-repeat center/100% url(../images/assets/fondo-768.png);
 }
 
 
@@ -1329,7 +1329,7 @@ section{
     z-index: 2;
     opacity: .9;
     align-items: center;
-    background: no-repeat center/100% url(../images/fondo-596.png);
+    background: no-repeat center/150% url(../images/assets/fondo-596.png);
 }
 
 }
@@ -1349,7 +1349,7 @@ section{
     z-index: 2;
     opacity: .9;
     align-items: center;
-    background: no-repeat center/100% url(../images/fondo-360-640-2.png);
+    background: no-repeat center/100% url(../images/assets/fondo-360-640-2.png);
 }
 
 
